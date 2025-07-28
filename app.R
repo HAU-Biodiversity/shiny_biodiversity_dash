@@ -11,6 +11,7 @@ library(shinyjs)
 
 # Source module files
 source("modules/overview.R")
+source("global.R")
 source("modules/species.R")
 source("modules/habitats.R")
 source("modules/carbon.R")
