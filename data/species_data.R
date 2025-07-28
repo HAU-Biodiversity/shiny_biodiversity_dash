@@ -32,7 +32,7 @@ taxonList <- read_excel("data/Master_species_observation_list.xlsx", sheet = "Ta
 
 # get latest & previous year
 sp_current_YTD <- get_latest_year(ms_data, year_var = year_final)
-sp_currentFullYear <- sp_latestYear - 1
+sp_currentFullYear <- sp_current_YTD - 1
 sp_prev_FullYear <- sp_currentFullYear - 1
 
 ## Species count YTD
