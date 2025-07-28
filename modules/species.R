@@ -1,3 +1,5 @@
+source("data/species_data.R")
+
 species_ui <- function(id) {
     ns <- NS(id)
 
