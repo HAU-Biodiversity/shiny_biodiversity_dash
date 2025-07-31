@@ -1,5 +1,3 @@
-source("data/habitat_data.R")
-
 overview_ui <- function(id) {
     ns <- NS(id)
 
