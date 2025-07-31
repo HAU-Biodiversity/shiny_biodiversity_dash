@@ -11,42 +11,42 @@ carbon_ui <- function(id) {
                 value = "x",
                 showcase = icon("wind"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "primary"
             ),
             value_box(
                 title = "Est. Carbon sequestration",
                 value = "x",
                 showcase = icon("seedling"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "primary"
             ),
             value_box(
                 title = "Est. net carbon",
                 value = "x",
                 showcase = icon("equals"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "primary"
             ),
             value_box(
                 title = "Highest enterprise",
                 value = "x",
                 showcase = icon("suitcase"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "warning"
             ),
             value_box(
                 title = "Largest Source",
                 value = "x",
                 showcase = icon("arrows-to-dot"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "warning"
             ),
             value_box(
                 title = "Highest gas emission",
                 value = "x",
                 showcase = icon("turn-up"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "warning"
             )
         ),
         br(),
@@ -80,28 +80,28 @@ carbon_ui <- function(id) {
                         value = "x",
                         showcase = icon("wind"),
                         showcase_layout = "top right",
-                        theme_color = "success"
+                        theme_color = "primary"
                     ),
                     value_box(
                         title = "Largest Source",
                         value = "x",
                         showcase = icon("arrows-to-dot"),
                         showcase_layout = "top right",
-                        theme_color = "success"
+                        theme_color = "warning"
                     ),
                     value_box(
                         title = "Product emissions",
                         value = "x",
                         showcase = icon("suitcase"),
                         showcase_layout = "top right",
-                        theme_color = "success"
+                        theme_color = "primary"
                     ),
                     value_box(
                         title = "Highest gas emission",
                         value = "x",
                         showcase = icon("turn-up"),
                         showcase_layout = "top right",
-                        theme_color = "success"
+                        theme_color = "warning"
                     )
                 )
             ),

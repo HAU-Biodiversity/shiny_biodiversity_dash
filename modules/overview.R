@@ -13,7 +13,7 @@ overview_ui <- function(id) {
                 tags$p("ha"),
                 showcase = icon("map"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "primary"
             ),
             value_box(
                 title = "Area of semi-natural habitat",
@@ -21,21 +21,21 @@ overview_ui <- function(id) {
                 tags$p("ha"),
                 showcase = icon("leaf"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "primary"
             ),
             value_box(
                 title = "Unique species",
                 value = "x",
                 showcase = icon("fingerprint"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "primary"
             ),
             value_box(
                 title = "Carbon emissions",
                 value = "x",
                 showcase = icon("wind"),
                 showcase_layout = "top right",
-                theme_color = "success"
+                theme_color = "primary"
             )
         ),
         br(),
@@ -63,7 +63,7 @@ overview_ui <- function(id) {
                         value = "x",
                         showcase = icon("feather"),
                         showcase_layout = "top right",
-                        theme_color = "success"
+                        theme_color = "primary"
                     )
                 )
             ),
@@ -81,14 +81,14 @@ overview_ui <- function(id) {
                             value = "x",
                             showcase = icon("suitcase"),
                             showcase_layout = "top right",
-                            theme_color = "success"
+                            theme_color = "primary"
                         ),
                         value_box(
                             title = "Biggest Source Type",
                             value = "x",
                             showcase = icon("arrows-to-dot"),
                             showcase_layout = "top right",
-                            theme_color = "success"
+                            theme_color = "primary"
                         )
                     )
                 )

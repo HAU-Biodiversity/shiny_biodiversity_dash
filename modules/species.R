@@ -14,7 +14,7 @@ species_ui <- function(id) {
                     tags$p(sp_YTD_FullYear_message),
                     showcase = icon("leaf"),
                     showcase_layout = "top right",
-                    theme_color = "success"
+                    theme_color = "primary"
                 ),
                 value_box(
                     title = paste0("Total species last year ", sp_currentFullYear),
@@ -22,7 +22,7 @@ species_ui <- function(id) {
                     tags$p(sp_FullPrev_message),
                     showcase = icon("leaf"),
                     showcase_layout = "top right",
-                    theme_color = "success"
+                    theme_color = "secondary"
                 ),
                 value_box(
                     title = paste0("Taxon groups surveyed YTD ", sp_current_YTD),
@@ -30,7 +30,7 @@ species_ui <- function(id) {
                     tags$p(taxon_YTD_FullYear_message),
                     showcase = icon("leaf"),
                     showcase_layout = "top right",
-                    theme_color = "success"
+                    theme_color = "primary"
                 ),
                 value_box(
                     title = paste0("Taxon groups surveyed last year ", sp_currentFullYear),
@@ -38,7 +38,7 @@ species_ui <- function(id) {
                     tags$p(taxon_FullPrev_message),
                     showcase = icon("leaf"),
                     showcase_layout = "top right",
-                    theme_color = "success"
+                    theme_color = "secondary"
                 ),
             )
         ),
