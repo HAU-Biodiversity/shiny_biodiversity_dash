@@ -32,7 +32,7 @@ habitats_ui <- function(id) {
             )
         ),
         layout_columns(
-            col_widths = c(4, 8),
+            col_widths = c(2, 10),
             div(
                 h5("Habitat distinctiveness"),
                 layout_column_wrap(
