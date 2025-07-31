@@ -36,7 +36,7 @@ habitats_ui <- function(id) {
             div(
                 h5("Habitat distinctiveness"),
                 layout_column_wrap(
-                    width = 1 / 2,
+                    width = 1 / 1,
                     value_box(
                         title = "High",
                         value = "2.5%",

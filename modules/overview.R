@@ -1,3 +1,5 @@
+source("data/habitat_data.R")
+
 overview_ui <- function(id) {
     ns <- NS(id)
 
@@ -17,7 +19,7 @@ overview_ui <- function(id) {
             ),
             value_box(
                 title = "Area of semi-natural habitat",
-                value = "x",
+                value = semiNatCover,
                 tags$p("ha"),
                 showcase = icon("leaf"),
                 showcase_layout = "top right",
