@@ -17,7 +17,7 @@ overview_ui <- function(id) {
             ),
             value_box(
                 title = "Area of semi-natural habitat",
-                value = semiNatCover,
+                value = "x",
                 tags$p("ha"),
                 showcase = icon("leaf"),
                 showcase_layout = "top right",
