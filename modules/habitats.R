@@ -69,20 +69,36 @@ habitats_server <- function(id) {
     moduleServer(id, function(input, output, session) {
         # Add plots when ready
         shapesrds <- readRDS("data/shp_files/RPA/landPaecels.rds")
+        shapesrds_arable <- readRDS("data/shp_files/HAU/arable_parcels.rds")
+        shapesrds_woodland <- readRDS("data/shp_files/HAU/woodland_parcels.rds")
         output$habMap <- renderLeaflet({
             leaflet() %>%
                 addTiles() %>%
                 setView(lng = -2.4271792, lat = 52.779411, zoom = 13) %>%
                 addMarkers(lng = -2.4271792, lat = 52.779411, popup = "Harper Adams University") %>%
                 addPolygons(
-                    data = shapesrds,
-                    color = "grey",
+                    data = shapesrds_arable,
+                    color = "yellow",
                     weight = 2,
                     opacity = 0.8,
                     fillOpacity = 0.4,
-                    popup = ~ paste(
-                        "Parcel ID: ", PARCEL_ID, "<br>"
-                    )
+                    # popup = ~ paste(
+                    #    "Field Name:", Name, "<br>",
+                    #    "Area:", WholeArea, "<br>",
+                    #    "Topsoil:", Topsoil, "<br>",
+                    #    "Subsoil:", Subsoil, "<br>"
+                    # )
+                ) %>%
+                addPolygons(
+                    data = shapesrds_woodland,
+                    color = "darkgreen",
+                    weight = 2,
+                    opacity = 0.8,
+                    fillOpacity = 0.4,
+                    # popup = ~ paste(
+                    #    "Name:", Name, "<br>",
+                    #    "Area:", area_ha, "ha", "<br>"
+                    # )
                 )
         })
     })

@@ -21,7 +21,8 @@ ms_data <- master_species_data %>%
     mutate(year_final = coalesce(
         year, # use this if it's not NA
         year(ymd(date_final))
-    ))
+    )) %>%
+    filter(year_final >= 2015)
 
 # glimpse(ms_data)
 

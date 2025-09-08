@@ -8,7 +8,6 @@ library(leaflet)
 library(sf)
 library(DT)
 library(shinyjs)
-# library(sf)
 
 # Source module files
 source("modules/overview.R")
